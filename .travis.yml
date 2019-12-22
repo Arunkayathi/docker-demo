@@ -9,6 +9,7 @@ script:
   - docker run -e CI=true arunreddy2786/docker-demo npm run test
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "Docker-env.wxsh5br6wm.us-east-2.elasticbeanstalk.com"
   app: "docker"
